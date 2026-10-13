@@ -250,3 +250,28 @@ body:has(.story-grid) .process-item:nth-child(n):before{color:var(--accent)}
 .studio-film-video{display:block;width:100%;max-height:72vh;aspect-ratio:16/9;background:#171315;object-fit:contain}
 @media(max-width:800px){.studio-film{padding:62px 0}.studio-film-video{aspect-ratio:16/10}}
 @media(max-width:460px){.studio-film{padding:48px 0}.studio-film .section-heading{margin-bottom:22px}.studio-film-video{aspect-ratio:4/3}}
+
+.home-page .about-content{margin-top:86px;padding-top:42px;border-color:#d9c9bf}
+.home-page .about-story{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.72fr);align-items:center;gap:72px}
+.home-page .about-content-heading{display:block;margin:0 0 28px}
+.home-page .about-content-heading h2{max-width:650px;margin:14px 0 0;color:#321a21;font-size:clamp(2.25rem,4vw,3.5rem);line-height:1.12}
+.home-page .about-story-copy{max-width:690px}
+.home-page .about-story-copy p{margin:0 0 18px;color:#71636a;font-size:.94rem;line-height:1.85}
+.home-page .about-story-copy p:last-child{margin-bottom:0}
+.home-page .about-story-copy .about-story-lead{margin-bottom:22px;color:#4a1d2b;font-family:var(--serif);font-size:1.42rem;line-height:1.5}
+.home-page .about-story-copy strong{color:#4a1d2b}
+.home-page .about-story-note{position:relative;display:flex;min-height:340px;flex-direction:column;justify-content:space-between;padding:40px 36px;background:#4a1d2b;color:#fbf8f4}
+.home-page .about-story-note:before{position:absolute;inset:12px;border:1px solid rgba(234,216,196,.35);content:'';pointer-events:none}
+.home-page .about-story-note-label,.home-page .about-story-signature{position:relative;color:#d9b790;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.home-page .about-story-note>p{position:relative;margin:38px 0;color:#fbf8f4;font-family:var(--serif);font-size:clamp(1.65rem,2.4vw,2.2rem);line-height:1.35}
+.home-page .about-story-signature span{display:block;margin-top:7px;color:rgba(251,248,244,.72);font-size:.62rem;font-weight:500;letter-spacing:.12em}
+@media(max-width:800px){
+	.home-page .about-content{margin-top:64px;padding-top:34px}
+	.home-page .about-story{grid-template-columns:1fr;gap:34px}
+	.home-page .about-content-heading h2{font-size:clamp(2.2rem,7vw,3rem)}
+	.home-page .about-story-note{min-height:280px;padding:34px}
+}
+@media(max-width:460px){
+	.home-page .about-story-copy .about-story-lead{font-size:1.25rem}
+	.home-page .about-story-note{min-height:250px;padding:30px}
+}
